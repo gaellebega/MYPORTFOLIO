@@ -1,8 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./portifolio/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    fontFamily:{
+      monstrserrat:['Montserrat','sans-serif'],
+      inter: ['Inter','sans-serif']
+    },
+    extend: {
+      colors: {
+        'primary': '#0872BF',
+        'background':"#141A1A",
+      }
+    },
   },
   plugins: [],
 }
